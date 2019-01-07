@@ -2,11 +2,13 @@ export function DecimalPart(num1) {
   let num2
   if (typeof num1 === 'string') {
     num2 = parseFloat(num1)
-  } else if (typeof num !== 'number') {
+  } else if (typeof num1 === 'number') {
     num2 = num1
+  } else {
+    throw Error(`param must can cast to number: ${num1}`)
   }
   if (isNaN(num2)) {
-    throw Error(`必须可转换成数字: ${num1}`)
+    throw Error(`param must can cast to number: ${num1}`)
   }
   const part2 = (num2 + '').split('.')[1]
   return part2 ? part2.length : 0
