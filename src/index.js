@@ -22,6 +22,6 @@ export function SumFloat(aa1, bb1) {
     const cc1 = Math.pow(10, len3)
     return (aa1 * cc1 + bb1 * cc1) / cc1
   } else {
-    return aa1 + bb1
+    return aa1 - 0 + (bb1 - 0)
   }
 }
