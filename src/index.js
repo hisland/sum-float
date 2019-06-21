@@ -5,10 +5,10 @@ export function DecimalPart(num1) {
   } else if (typeof num1 === 'number') {
     num2 = num1
   } else {
-    throw Error(`param must can cast to number: ${num1}`)
+    throw Error('param must can cast to number: ' + num1)
   }
   if (isNaN(num2)) {
-    throw Error(`param must can cast to number: ${num1}`)
+    throw Error('param must can cast to number: ' + num1)
   }
   const part2 = (num2 + '').split('.')[1]
   return part2 ? part2.length : 0
