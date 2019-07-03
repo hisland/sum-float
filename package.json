@@ -26,6 +26,7 @@
     "babel-jest": "^24.8.0",
     "babel-preset-env": "^1.7.0",
     "jest": "^24.8.0",
+    "rollup-plugin-babel": "3",
     "rollup": "^1.15.6"
   }
 }
